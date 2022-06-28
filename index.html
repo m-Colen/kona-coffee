@@ -24,26 +24,52 @@
     <header>
       <!-- Top Navigation Bar -->
       <nav>
-        <ul class="topnav">
-          <li>
-            <a href="#"><i class="fa-solid fa-mug-hot fa-2x logo"></i></a>
-          </li>
-          <li>
-            <button class="hamburger-menu" aria-label="Open Navigation Menu">
-              <i id="ham-menu-icon" class="fa-solid fa-bars"></i>
-              <i
-                id="ham-menu-close"
-                class="fa-solid fa-square-xmark hidden"
-              ></i>
-            </button>
-          </li>
-        </ul>
+        <div class="nav-links">
+          <div class="nav-main-links">
+            <ul class="topnav">
+              <!-- Main Logo -->
+              <li>
+                <a href="index.html"
+                  ><i class="fa-solid fa-mug-hot fa-2x logo"></i
+                ></a>
+              </li>
+              <!-- Desktop Nav Items -->
+              <li><a class="desktop-nav-item" href="#">Menu</a></li>
+              <li><a class="desktop-nav-item" href="#">Rewards</a></li>
+              <li><a class="desktop-nav-item" href="#">Gift Cards</a></li>
+              <!-- Hamburger Menu Buttons -->
+              <li>
+                <button
+                  class="hamburger-menu"
+                  aria-label="Open Navigation Menu"
+                >
+                  <i id="ham-menu-icon" class="fa-solid fa-bars"></i>
+                  <i
+                    id="ham-menu-close"
+                    class="fa-solid fa-square-xmark hidden"
+                  ></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-secondary-links">
+            <ul>
+              <li><a class="block-link" href="#">Find a Store</a></li>
+              <li>
+                <button class="button">Sign In</button>
+              </li>
+              <li>
+                <button class="button">Join Now</button>
+              </li>
+            </ul>
+          </div>
+        </div>
         <!-- Mobile Nav Menu -->
-        <div class="ham-nav-menu">
+        <div class="mobile-nav-menu">
           <ul>
             <li>
               <button class="nav-menu-button">
-                <span class="mobile-nav-item button-style-none">Menu</span>
+                <span class="mobile-nav-item">Menu</span>
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
             </li>
@@ -51,9 +77,13 @@
             <li><a class="mobile-nav-item" href="#">Gift Cards</a></li>
             <hr />
           </ul>
-          <button>Sign In</button>
-          <button>Join Now</button>
-          <a href="#">Find a Store</a>
+          <div class="ham-nav-menu-buttons">
+            <button class="button">Sign In</button>
+            <button class="button">Join Now</button>
+          </div>
+          <div class="ham-nav-menu-links">
+            <a class="block-link" href="#">Find a Store</a>
+          </div>
         </div>
       </nav>
     </header>
