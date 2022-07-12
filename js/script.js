@@ -1,4 +1,4 @@
-/********** Hamburger menu interactivity **********/
+/* Hamburger menu interactivity */
 
 const hamMenu = document.querySelector(".hamburger-menu"); // Ham Menu Button
 
@@ -24,7 +24,7 @@ const toggleScrollBar = () => {
 
 hamMenu.addEventListener("click", toggleHamMenuDisplay);
 
-/**********Footer **********/
+/* Footer */
 
 // Targets
 const aboutButton = document.querySelector(".about-clickable");
@@ -51,7 +51,7 @@ const toggleAbout = (elem, icon) => {
 
 // Event listeners for footer accordions (set at less than 750px window width)
 
-if (window.innerWidth < 750) {
+
   aboutButton.addEventListener("click", () => {
     const aboutHidden = document.querySelector(".about-hidden");
     const aboutArrow = document.querySelector(".about-arrow");
@@ -85,4 +85,3 @@ if (window.innerWidth < 750) {
     const orderArrow = document.querySelector(".order-arrow");
     toggleAbout(orderHidden, orderArrow);
   });
-}
